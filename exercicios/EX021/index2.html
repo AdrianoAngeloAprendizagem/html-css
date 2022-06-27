@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+
+        *{
+            margin:0px;
+            padding: 0px;
+        }
+
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: gray;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 5px;
+
+        }
+
+        nav{
+            background-color: gray;
+            padding: 5px;
+            /* Sombra
+            box shadow: desloque horizontal desloque vertical embaçamento espalhamento cor  */
+            box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.500);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            padding-right: 5px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+            color: goldenrod;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        section{
+            padding: 5px;
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 10px 10px 0px 10px;
+            /* borda arredondada - pode usar shorthand ou versão completa*/
+            border-radius: 10px 0px;
+        }
+
+        aside{
+            background-color: rgb(169, 169, 169);
+            margin: 10px 0px;
+        }
+
+        footer{
+            background-color: black;
+            padding: 5px;
+        }
+
+        footer > p{
+            color: white;
+            text-align: center;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="http://">Quem Somos</a>
+            <a href="http://">História</a>
+            <a href="http://">Contato</a>
+            <a href="http://">Localização</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <p>Esportes Politica Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article class="noticia">
+                <h2>São Paulo Futebol Clube</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ad aut delectus necessitatibus aliquam dolores recusandae est omnis veritatis. Optio earum beatae ratione aliquam numquam facilis architecto accusamus quasi eius.</p>
+                <aside>
+                    <p>Artigo escrito por Daniel Perrone</p>
+                </aside>
+                <article class="noticia">
+
+                </article>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Adriano Angelo</p>
+    </footer>
+
+</body>
+
+</html>

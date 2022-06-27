@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    
+    <style>
+
+        /*  SELETORES PERSOLNALIZADOS
+
+            #  = id
+            .  = class
+            :  = pseudo-class
+            ::  = pseudo-element
+            >  = children
+        
+        */
+
+
+
+        a{
+            color: aqua;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: chartreuse;
+        }
+
+        a:hover{
+            background-color: black;
+            color: white;
+            border: solid 1px yellow;
+        }
+
+        a:active{
+            color: red;
+        }
+
+        .especial{
+            background-color: coral;
+        }
+
+        .especial::after{
+            content: ' <=';
+        }
+
+        .especial::before{
+            content: '=> ';
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Pseudo Classes</h1>
+
+    <h2>Divs</h2>
+
+    <div>01</div>
+    <div>02</div>
+    <div>03</div>
+
+    <h2>Links</h2>
+
+    <ul>
+        <li><a href="">GitHub</a></li>
+        <li><a href="">Youtube</a></li>
+        <li><a href="" class="especial">Curso em Video</a></li>
+    </ul>
+
+
+</body>
+</html>

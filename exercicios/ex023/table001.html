@@ -14,6 +14,7 @@
 
         table{
             width: 400px;
+            height: 400px;
             border-collapse: collapse;
         }
 
@@ -24,10 +25,18 @@
         td{
             border: 1px solid black;
             padding: 8px;
+            text-align: center; /* Alinhamento Horizontal */
+            vertical-align: middle; /* Alinhamento Vertical */
         }
 
         td.dado{
             background-color: blueviolet;
+            vertical-align: bottom;
+        }
+
+        .numero{
+            text-align: right;
+            vertical-align: top;
         }
 
     </style>
@@ -35,6 +44,14 @@
 <body>
 
     <h1>Minha primeira tabela</h1>
+
+    <!--
+        HIERARQUIA DAS TABELAS
+        TABLE = Tabela
+            TABLE ROW = linha de tabela
+                TABLE HEADER = cabeçalho de tabela
+                TABLE DATA = dado de tabela
+    -->
 
     <table>
 
@@ -47,7 +64,7 @@
         <tr>
             <td>A2</td>
             <td>B2</td>
-            <td>C2</td>
+            <td class="numero">C2</td>
         </tr>
 
         <tr>

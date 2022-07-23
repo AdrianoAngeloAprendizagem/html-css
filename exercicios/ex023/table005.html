@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabelas</title>
+
+    <style>
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        col.cnome{
+            background-color: yellow;
+        }
+
+        col.cidade{
+            background-color: aqua;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Exercício de Tabelas</h1>
+
+    <table>
+
+        <!-- Utilizando colgroup para persolinalizar colunas-->
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+
+            <!-- Também podemos utilizar da forma abaixo
+                Assim a col com class vermelho será aplicado a 2 colunas em sequência
+                <col class="cnome">
+                <col class="vermelho" span="2">
+                <col class="cprof">
+            -->
+        </colgroup>
+        <!-- Utilizando colgroup para persolinalizar colunas-->
+
+        <caption>Cadastro</caption>
+
+        <thead>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Ana</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Marco</td>
+                <td>M</td>
+                <td>45</td>
+                <td>Diretor</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>35</td>
+                <td>Editora</td>
+            </tr>
+            <tr>
+                <td>Fabio</td>
+                <td>M</td>
+                <td>21</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Julia</td>
+                <td>F</td>
+                <td>29</td>
+                <td>Cientista</td>
+            </tr>
+        </tbody>
+
+    </table>
+    
+</body>
+</html>
